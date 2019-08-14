@@ -1,0 +1,349 @@
+[root@app1 ~]# cd travis_vps_starter/                                                                                      
+[root@app1 travis_vps_starter]# chmod +x travis_vps_starter.sh                                                             
+[root@app1 travis_vps_starter]# ./travis_vps_starter.sh -u "adminUser" -k "id_rsa.pub" -p 1989                 
+Starting set up VPS...                                                                                                     
+Updating OS...                                                                                                             
+Loaded plugins: fastestmirror, langpacks                                                                                   
+Loading mirror speeds from cached hostfile                                                                                 
+ * base: centos.cs.nctu.edu.tw                                                                                             
+ * epel: mirror.ehost.vn                                                                                                   
+ * epel-debuginfo: mirror.ehost.vn                                                                                         
+ * epel-source: mirror.ehost.vn                                                                                            
+ * extras: mirrors.nhanhoa.com                                                                                             
+ * updates: mirrors.nhanhoa.com                                                                                            
+Resolving Dependencies                                                                                                     
+--> Running transaction check                                                                                              
+---> Package GeoIP.x86_64 0:1.5.0-11.el7 will be updated                                                                   
+---> Package GeoIP.x86_64 0:1.5.0-13.el7 will be an update                                                                 
+--> Running transaction check
+---> Package libsmartcols.x86_64 0:2.23.2-59.el7_6.1 will be installed
+---> Package pixman.x86_64 0:0.34.0-1.el7 will be installed
+---> Package python2-futures.noarch 0:3.1.1-5.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+===========================================================================================================================
+ Package                               Arch             Version                                    Repository         Size
+===========================================================================================================================
+Installing for group upgrade "Base":
+ bpftool                               x86_64           3.10.0-957.27.2.el7                        updates           7.5 M
+Installing:
+ grub2                                 x86_64           1:2.02-0.76.el7.centos.1                   updates            31 k
+     replacing  grub2.x86_64 1:2.02-0.65.el7.centos.2
+ grub2-tools                           x86_64           1:2.02-0.76.el7.centos.1                   updates           1.8 M
+     replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+ grub2-tools-extra                     x86_64           1:2.02-0.76.el7.centos.1                   updates           995 k
+     replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+ grub2-tools-minimal                   x86_64           1:2.02-0.76.el7.centos.1                   updates           172 k
+     replacing  grub2-tools.x86_64 1:2.02-0.65.el7.centos.2
+ kernel                                x86_64           3.10.0-957.27.2.el7                        updates            48 M
+Updating:
+ GeoIP                                 x86_64           1.5.0-13.el7                               base              1.5 M
+Installing for dependencies:
+ libsmartcols                          x86_64           2.23.2-59.el7_6.1                          updates           140 k
+ pixman                                x86_64           0.34.0-1.el7                               base              248 k
+ python2-futures                       noarch           3.1.1-5.el7                                base               29 k
+
+Transaction Summary
+===========================================================================================================================
+Install    6 Packages (+3 Dependent packages)
+Upgrade  249 Packages
+
+Total download size: 286 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(258/258): linux-firmware-20180911-69.git85c5d90.el7.noarch.rpm                                     |  49 MB  00:00:16     
+---------------------------------------------------------------------------------------------------------------------------
+Total                                                                                      7.4 MB/s | 286 MB  00:00:38     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : libgcc-4.8.5-36.el7_6.2.x86_64                                                                        1/511 
+  Verifying  : python-dmidecode-3.12.2-2.el7.x86_64                                                                509/511 
+  Verifying  : 1:grub2-pc-modules-2.02-0.65.el7.centos.2.noarch                                                    510/511 
+  Verifying  : e2fsprogs-1.42.9-11.el7.x86_64                                                                      511/511 
+
+Installed:
+  bpftool.x86_64 0:3.10.0-957.27.2.el7                          grub2.x86_64 1:2.02-0.76.el7.centos.1                      
+  grub2-tools.x86_64 1:2.02-0.76.el7.centos.1                   grub2-tools-extra.x86_64 1:2.02-0.76.el7.centos.1          
+  grub2-tools-minimal.x86_64 1:2.02-0.76.el7.centos.1           kernel.x86_64 0:3.10.0-957.27.2.el7                        
+
+Dependency Installed:
+  libsmartcols.x86_64 0:2.23.2-59.el7_6.1      pixman.x86_64 0:0.34.0-1.el7      python2-futures.noarch 0:3.1.1-5.el7     
+
+Updated:
+  GeoIP.x86_64 0:1.5.0-13.el7                                   NetworkManager.x86_64 1:1.12.0-10.el7_6                    
+  xfsprogs.x86_64 0:4.5.0-19.el7_6                              yum.noarch 0:3.4.3-161.el7.centos                          
+  yum-plugin-fastestmirror.noarch 0:1.1.31-50.el7               yum-utils.noarch 0:1.1.31-50.el7                           
+  zlib.x86_64 0:1.2.7-18.el7                                   
+
+Replaced:
+  grub2.x86_64 1:2.02-0.65.el7.centos.2                     grub2-tools.x86_64 1:2.02-0.65.el7.centos.2                    
+
+Complete!
+Updating OS... DONE
+Installing useful packages...
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.cs.nctu.edu.tw
+ * epel: mirror.ehost.vn
+ * epel-debuginfo: mirror.ehost.vn
+ * epel-source: mirror.ehost.vn
+ * extras: mirrors.nhanhoa.com
+ * updates: mirrors.nhanhoa.com
+Package 3:traceroute-2.0.22-2.el7.x86_64 already installed and latest version
+Package 1:make-3.82-23.el7.x86_64 already installed and latest version
+Package pcre-8.32-17.el7.x86_64 already installed and latest version
+Package 1:openssl-1.0.2k-16.el7_6.1.x86_64 already installed and latest version
+Package libcurl-7.29.0-51.el7_6.3.x86_64 already installed and latest version
+Package rpm-4.11.3-35.el7.x86_64 already installed and latest version
+Package nano-2.3.1-10.el7.x86_64 already installed and latest version
+Package 2:tar-1.26-35.el7.x86_64 already installed and latest version
+Package zip-3.0-11.el7.x86_64 already installed and latest version
+Package unzip-6.0-19.el7.x86_64 already installed and latest version
+Package ntp-4.2.6p5-28.el7.centos.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package gcc.x86_64 0:4.8.5-36.el7_6.2 will be installed
+--> Processing Dependency: cpp = 4.8.5-36.el7_6.2 for package: gcc-4.8.5-36.el7_6.2.x86_64
+--> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-36.el7_6.2.x86_64
+--> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-36.el7_6.2.x86_64
+--> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-36.el7_6.2.x86_64
+---> Package google-authenticator.x86_64 0:1.04-1.el7 will be installed
+---> Package libcurl-devel.x86_64 0:7.29.0-51.el7_6.3 will be installed
+epel/x86_64/filelists_db                                                                            |  12 MB  00:00:07     
+base/7/x86_64/filelists_db                                                                          | 7.1 MB  00:00:02     
+updates/7/x86_64/filelists_db                                                                       | 5.2 MB  00:00:01     
+---> Package nmap-ncat.x86_64 2:6.40-16.el7 will be installed
+---> Package pcre-devel.x86_64 0:8.32-17.el7 will be installed
+---> Package telnet.x86_64 1:0.17-64.el7 will be installed
+--> Running transaction check
+---> Package cpp.x86_64 0:4.8.5-36.el7_6.2 will be installed
+---> Package glibc-devel.x86_64 0:2.17-260.el7_6.6 will be installed
+--> Processing Dependency: glibc-headers = 2.17-260.el7_6.6 for package: glibc-devel-2.17-260.el7_6.6.x86_64
+--> Processing Dependency: glibc-headers for package: glibc-devel-2.17-260.el7_6.6.x86_64
+---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+--> Running transaction check
+---> Package glibc-headers.x86_64 0:2.17-260.el7_6.6 will be installed
+--> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-260.el7_6.6.x86_64
+--> Processing Dependency: kernel-headers for package: glibc-headers-2.17-260.el7_6.6.x86_64
+--> Running transaction check
+---> Package kernel-headers.x86_64 0:3.10.0-957.27.2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+===========================================================================================================================
+ Package                             Arch                  Version                            Repository              Size
+===========================================================================================================================
+Installing:
+ gcc                                 x86_64                4.8.5-36.el7_6.2                   updates                 16 M
+ google-authenticator                x86_64                1.04-1.el7                         epel                    48 k
+ libcurl-devel                       x86_64                7.29.0-51.el7_6.3                  updates                302 k
+ nmap-ncat                           x86_64                2:6.40-16.el7                      base                   206 k
+ pcre-devel                          x86_64                8.32-17.el7                        base                   480 k
+ telnet                              x86_64                1:0.17-64.el7                      base                    64 k
+Installing for dependencies:
+ cpp                                 x86_64                4.8.5-36.el7_6.2                   updates                5.9 M
+ glibc-devel                         x86_64                2.17-260.el7_6.6                   updates                1.1 M
+ glibc-headers                       x86_64                2.17-260.el7_6.6                   updates                684 k
+ kernel-headers                      x86_64                3.10.0-957.27.2.el7                updates                8.0 M
+ libmpc                              x86_64                1.0.1-3.el7                        base                    51 k
+ mpfr                                x86_64                3.1.1-4.el7                        base                   203 k
+
+Transaction Summary
+===========================================================================================================================
+Install  6 Packages (+6 Dependent packages)
+
+Total download size: 33 M
+Installed size: 63 M
+Downloading packages:
+(1/12): cpp-4.8.5-36.el7_6.2.x86_64.rpm                                                             | 5.9 MB  00:00:01     
+(2/12): glibc-devel-2.17-260.el7_6.6.x86_64.rpm                                                     | 1.1 MB  00:00:00     
+(3/12): glibc-headers-2.17-260.el7_6.6.x86_64.rpm                                                   | 684 kB  00:00:00     
+warning: /var/cache/yum/x86_64/7/epel/packages/google-authenticator-1.04-1.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+Public key for google-authenticator-1.04-1.el7.x86_64.rpm is not installed
+(4/12): google-authenticator-1.04-1.el7.x86_64.rpm                                                  |  48 kB  00:00:00     
+(5/12): kernel-headers-3.10.0-957.27.2.el7.x86_64.rpm                                               | 8.0 MB  00:00:01     
+(6/12): libcurl-devel-7.29.0-51.el7_6.3.x86_64.rpm                                                  | 302 kB  00:00:00     
+(7/12): libmpc-1.0.1-3.el7.x86_64.rpm                                                               |  51 kB  00:00:00     
+(8/12): pcre-devel-8.32-17.el7.x86_64.rpm                                                           | 480 kB  00:00:00     
+(9/12): mpfr-3.1.1-4.el7.x86_64.rpm                                                                 | 203 kB  00:00:00     
+(10/12): telnet-0.17-64.el7.x86_64.rpm                                                              |  64 kB  00:00:00     
+(11/12): nmap-ncat-6.40-16.el7.x86_64.rpm                                                           | 206 kB  00:00:01     
+(12/12): gcc-4.8.5-36.el7_6.2.x86_64.rpm                                                            |  16 MB  00:00:07     
+---------------------------------------------------------------------------------------------------------------------------
+Total                                                                                      4.5 MB/s |  33 MB  00:00:07     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Importing GPG key 0x352C64E5:
+ Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+ Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+ Package    : epel-release-7-11.noarch (@extras)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mpfr-3.1.1-4.el7.x86_64                                                                                1/12 
+  Installing : libmpc-1.0.1-3.el7.x86_64                                                                              2/12 
+  Installing : cpp-4.8.5-36.el7_6.2.x86_64                                                                            3/12 
+  Installing : kernel-headers-3.10.0-957.27.2.el7.x86_64                                                              4/12 
+  Installing : glibc-headers-2.17-260.el7_6.6.x86_64                                                                  5/12 
+  Installing : glibc-devel-2.17-260.el7_6.6.x86_64                                                                    6/12 
+  Installing : gcc-4.8.5-36.el7_6.2.x86_64                                                                            7/12 
+  Installing : 2:nmap-ncat-6.40-16.el7.x86_64                                                                         8/12 
+  Installing : pcre-devel-8.32-17.el7.x86_64                                                                          9/12 
+  Installing : libcurl-devel-7.29.0-51.el7_6.3.x86_64                                                                10/12 
+  Installing : google-authenticator-1.04-1.el7.x86_64                                                                11/12 
+  Installing : 1:telnet-0.17-64.el7.x86_64                                                                           12/12 
+  Verifying  : 1:telnet-0.17-64.el7.x86_64                                                                            1/12 
+  Verifying  : google-authenticator-1.04-1.el7.x86_64                                                                 2/12 
+  Verifying  : libcurl-devel-7.29.0-51.el7_6.3.x86_64                                                                 3/12 
+  Verifying  : mpfr-3.1.1-4.el7.x86_64                                                                                4/12 
+  Verifying  : pcre-devel-8.32-17.el7.x86_64                                                                          5/12 
+  Verifying  : glibc-devel-2.17-260.el7_6.6.x86_64                                                                    6/12 
+  Verifying  : libmpc-1.0.1-3.el7.x86_64                                                                              7/12 
+  Verifying  : cpp-4.8.5-36.el7_6.2.x86_64                                                                            8/12 
+  Verifying  : gcc-4.8.5-36.el7_6.2.x86_64                                                                            9/12 
+  Verifying  : 2:nmap-ncat-6.40-16.el7.x86_64                                                                        10/12 
+  Verifying  : glibc-headers-2.17-260.el7_6.6.x86_64                                                                 11/12 
+  Verifying  : kernel-headers-3.10.0-957.27.2.el7.x86_64                                                             12/12 
+
+Installed:
+  gcc.x86_64 0:4.8.5-36.el7_6.2     google-authenticator.x86_64 0:1.04-1.el7    libcurl-devel.x86_64 0:7.29.0-51.el7_6.3   
+  nmap-ncat.x86_64 2:6.40-16.el7    pcre-devel.x86_64 0:8.32-17.el7             telnet.x86_64 1:0.17-64.el7                
+
+Dependency Installed:
+  cpp.x86_64 0:4.8.5-36.el7_6.2                              glibc-devel.x86_64 0:2.17-260.el7_6.6                         
+  glibc-headers.x86_64 0:2.17-260.el7_6.6                    kernel-headers.x86_64 0:3.10.0-957.27.2.el7                   
+  libmpc.x86_64 0:1.0.1-3.el7                                mpfr.x86_64 0:3.1.1-4.el7                                     
+
+Complete!
+Installing useful packages... DONE
+Setting auto-update time...
+Wed 14 Aug 2019 03:33:28 PM +07  -10.010431 seconds
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.cs.nctu.edu.tw
+ * epel: mirror.ehost.vn
+ * epel-debuginfo: mirror.ehost.vn
+ * epel-source: mirror.ehost.vn
+ * extras: mirrors.nhanhoa.com
+ * updates: mirrors.nhanhoa.com
+Package ntp-4.2.6p5-28.el7.centos.x86_64 already installed and latest version
+Nothing to do
+14 Aug 15:33:39 ntpdate[20442]: step time server 2610:20:6f15:15::27 offset -0.025649 sec
+Setting auto-update time... DONE
+Setting up iptables...
+Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
+Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.cs.nctu.edu.tw
+ * epel: mirror.ehost.vn
+ * epel-debuginfo: mirror.ehost.vn
+ * epel-source: mirror.ehost.vn
+ * extras: mirrors.nhanhoa.com
+ * updates: mirrors.nhanhoa.com
+Resolving Dependencies
+--> Running transaction check
+---> Package iptables-services.x86_64 0:1.4.21-28.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+===========================================================================================================================
+ Package                             Arch                     Version                         Repository              Size
+===========================================================================================================================
+Installing:
+ iptables-services                   x86_64                   1.4.21-28.el7                   base                    52 k
+
+Transaction Summary
+===========================================================================================================================
+Install  1 Package
+
+Total download size: 52 k
+Installed size: 26 k
+Downloading packages:
+iptables-services-1.4.21-28.el7.x86_64.rpm                                                          |  52 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : iptables-services-1.4.21-28.el7.x86_64                                                                  1/1 
+  Verifying  : iptables-services-1.4.21-28.el7.x86_64                                                                  1/1 
+
+Installed:
+  iptables-services.x86_64 0:1.4.21-28.el7                                                                                 
+
+Complete!
+● iptables.service - IPv4 firewall with iptables
+   Loaded: loaded (/usr/lib/systemd/system/iptables.service; disabled; vendor preset: disabled)
+   Active: active (exited) since Wed 2019-08-14 15:33:42 +07; 16ms ago
+  Process: 20547 ExecStart=/usr/libexec/iptables/iptables.init start (code=exited, status=0/SUCCESS)
+ Main PID: 20547 (code=exited, status=0/SUCCESS)
+
+Aug 14 15:33:42 app1.pitagon systemd[1]: Starting IPv4 firewall with iptables...
+Aug 14 15:33:42 app1.pitagon iptables.init[20547]: iptables: Applying firewall rules: [  OK  ]
+Aug 14 15:33:42 app1.pitagon systemd[1]: Started IPv4 firewall with iptables.
+Created symlink from /etc/systemd/system/basic.target.wants/iptables.service to /usr/lib/systemd/system/iptables.service.
+Setting up basic policies...
+# Generated by iptables-save v1.4.21 on Wed Aug 14 15:33:42 2019
+*filter
+:INPUT DROP [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j DROP
+-A INPUT -p tcp -m tcp ! --tcp-flags FIN,SYN,RST,ACK SYN -m state --state NEW -j DROP
+-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,PSH,ACK,URG -j DROP
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
+COMMIT
+# Completed on Wed Aug 14 15:33:42 2019
+Setting up iptables... DONE
+Setting up SSH service...
+Changing SSH port...
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: centos.cs.nctu.edu.tw
+ * epel: mirror.ehost.vn
+ * epel-debuginfo: mirror.ehost.vn
+ * epel-source: mirror.ehost.vn
+ * extras: mirrors.nhanhoa.com
+ * updates: mirrors.nhanhoa.com
+Package policycoreutils-python-2.5-29.el7_6.1.x86_64 already installed and latest version
+Nothing to do
+Adding SSH port to iptables...
+# Generated by iptables-save v1.4.21 on Wed Aug 14 15:33:43 2019
+*filter
+:INPUT DROP [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -p tcp -m tcp --dport 1989 -m state --state NEW -m recent ! --rcheck --seconds 60 --hitcount 4 --name ssh --mask 255.255.255.255 --rsource -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 1989 -m state --state NEW -m recent --set --name ssh --mask 255.255.255.255 --rsource
+-A INPUT -p tcp -m tcp --dport 1989 -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j DROP
+-A INPUT -p tcp -m tcp ! --tcp-flags FIN,SYN,RST,ACK SYN -m state --state NEW -j DROP
+-A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,PSH,ACK,URG -j DROP
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
+COMMIT
+# Completed on Wed Aug 14 15:33:43 2019
+Redirecting to /bin/systemctl restart iptables.service
+Setting up SSH service... DONE
+Creating admin user $ADMIN_USER...
+Adding user adminUser to group wheel
+Changing password for user adminUser.
+New password: BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: passwd: all authentication tokens updated successfully.
+Creating admin user $ADMIN_USER... DONE
+Setting up VPS all DONE.
+[root@app1 travis_vps_starter]# 
+[root@app1 travis_vps_starter]# cd /home/adminUser/
+[root@app1 adminUser]# nano .google-authenticator.out 
+[root@app1 adminUser]#
