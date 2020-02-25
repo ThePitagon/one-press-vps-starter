@@ -33,17 +33,6 @@ chown "$ADMIN_USER"'.' '/home/'"$ADMIN_USER"'/.ssh/'"$PUB_KEY"
 # Append key file to store. Here you could delete key file after appending.
 runuser -l $ADMIN_USER -c 'cat ~/.ssh/'"$PUB_KEY"' >> ~/.ssh/authorized_keys'
 
-# Create Google Authenticator and write output to file. After setup completed, you could nano the output file for details.
-sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-sudo yum -y install google-authenticator
-runuser -l $ADMIN_USER -c 'cd ~'
-runuser -l $ADMIN_USER -c 'google-authenticator -t -d -f -r 3 -R 30 -W >> .google-authenticator.out'
-
-cat <<EOT >> /etc/pam.d/sshd
-# Google Authenticator
-auth       required     pam_google_authenticator.so
-EOT
-
 # Change SSH configuration for 3 layers security: public key, password and Google Authenticator
 sudo sed -i -e 's/'"#PermitRootLogin no"'/'"PermitRootLogin no"'/g' /etc/ssh/sshd_config
 sudo sed -i -e 's/'"PermitRootLogin yes"'/'"PermitRootLogin no"'/g' /etc/ssh/sshd_config
@@ -60,12 +49,9 @@ sudo sed -i -e 's/'"PasswordAuthentication yes"'/'"PasswordAuthentication no"'/g
 sudo sed -i -e 's/'"#PermitEmptyPasswords no"'/'"PermitEmptyPasswords no"'/g' /etc/ssh/sshd_config
 sudo sed -i -e 's/'"PermitEmptyPasswords yes"'/'"PermitEmptyPasswords no"'/g' /etc/ssh/sshd_config
 
-sudo sed -i -e 's/'"#ChallengeResponseAuthentication yes"'/'"ChallengeResponseAuthentication yes"'/g' /etc/ssh/sshd_config
-sudo sed -i -e 's/'"ChallengeResponseAuthentication no"'/'"ChallengeResponseAuthentication yes"'/g' /etc/ssh/sshd_config
-
 cat <<EOT >> /etc/ssh/sshd_config
 
-AuthenticationMethods publickey,keyboard-interactive publickey,password
+AuthenticationMethods publickey
 
 EOT
 

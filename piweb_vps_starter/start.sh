@@ -5,9 +5,11 @@
 # @notice: run as root
 
 # Read arguments
-while getopts ":u:k:p:" opt; do
+while getopts ":u:k:p:s:" opt; do
   case $opt in
     u) ADMIN_USER="$OPTARG"
+    ;;
+    s) ADMIN_PASSWORD="$OPTARG"
     ;;
     k) PUB_KEY="$OPTARG"
     ;;
@@ -21,8 +23,8 @@ done
 
 echo 'Starting set up VPS...'
 
-[ -z "$SSH_PORT" ] && SSH_PORT=1989
-[ -z "$ADMIN_USER" ] && ADMIN_USER=adminUser
+[ -z "$SSH_PORT" ] && SSH_PORT=56789
+[ -z "$ADMIN_USER" ] && ADMIN_USER=admin
 
 # Update OS
 chmod +x update_os.sh
@@ -46,6 +48,6 @@ chmod +x setup_sshd.sh
 
 # Create user with administrator rights
 chmod +x create_user.sh
-./create_user.sh $ADMIN_USER $PUB_KEY
+./create_user.sh $ADMIN_USER $ADMIN_PASSWORD $PUB_KEY
 
 echo 'Setting up VPS all DONE.'
