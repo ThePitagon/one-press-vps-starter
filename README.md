@@ -1,4 +1,4 @@
-# one-press-vps-starter
+# One Press VPS Starter
 
 Setup a new vps with 3 security layers
 
@@ -33,3 +33,12 @@ In there:
 # Test
 
 See `test.log` for example output.
+
+## Support & Feedback
+If you still have a question after using One Press VPS Starter, you have a few options.
+* Using support page on [Pitagon Website](https://pitagon.io).
+* Send email to [Pitagon Support Team](mailto:support@pitagon.vn) for help.
+* Connect [Travis Tran on Facebook](https://www.facebook.com/travistran1989) for real-time discussion.
+* Reporting any issue on [Github one-press-vps-starter](https://github.com/Pitagon-P5N/one-press-vps-starter/issues) project.
+
+**Pull requests are always welcome**
