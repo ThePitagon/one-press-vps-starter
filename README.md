@@ -1,11 +1,7 @@
-# One Press VPS Starter
-<img src="https://img.shields.io/badge/version-1.0-brightgreen">
-
-[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/company/pitagon/)
-[<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white">](https://www.facebook.com/ThePitagon/)
-[<img src="https://img.shields.io/twitter/follow/ThePitagon.svg?label=Follow&style=social">](https://twitter.com/ThePitagon/)
-
+# One Press VPS Starter [<img src="https://img.shields.io/twitter/follow/ThePitagon.svg?label=Follow&style=social">](https://twitter.com/ThePitagon/)
 Setup a new vps with 3 security layers
+
+<img src="https://img.shields.io/badge/version-1.0-brightgreen">
 
 # Usage
 
@@ -41,14 +37,9 @@ See `test.log` for example output.
 
 ## Support & Feedback
 If you still have a question after using One Press VPS Starter, you have a few options.
+* Reporting any issue on [Github one-press-vps-starter](https://github.com/ThePitagon/one-press-vps-starter/issues) project.
 * Using support page on [Pitagon Website](https://pitagon.io).
 * Send email to [Pitagon Support Team](mailto:support@pitagon.vn) for help.
-* Reporting any issue on [Github one-press-vps-starter](https://github.com/ThePitagon/one-press-vps-starter/issues) project.
-
-Connect with author: [GitHub](https://github.com/travistran1989)
-* Official site: [travistran.me](https://travistran.me/) | [truongtx.com](https://truongtx.com/).
-* Facebook: [@travistran1989](https://www.facebook.com/travistran1989/).
-* Twitter: [@travistran1989](https://twitter.com/travistran1989/).
-* LinkedIn: [@travistran1989](https://www.linkedin.com/in/travistran1989/).
+* Connect with author on [GitHub](https://github.com/travistran1989/).
 
 **Pull requests are always welcome**
