@@ -45,7 +45,7 @@ If you still have a question after using One Press VPS Starter, you have a few o
 * Send email to [Pitagon Support Team](mailto:support@pitagon.vn) for help.
 * Reporting any issue on [Github one-press-vps-starter](https://github.com/ThePitagon/one-press-vps-starter/issues) project.
 
-Connect with author:
+Connect with author: [GitHub](https://github.com/travistran1989)
 * Official site: [travistran.me](https://travistran.me/) | [truongtx.com](https://truongtx.com/).
 * Facebook: [@travistran1989](https://www.facebook.com/travistran1989/).
 * Twitter: [@travistran1989](https://twitter.com/travistran1989/).
