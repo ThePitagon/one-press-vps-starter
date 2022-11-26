@@ -43,7 +43,12 @@ See `test.log` for example output.
 If you still have a question after using One Press VPS Starter, you have a few options.
 * Using support page on [Pitagon Website](https://pitagon.io).
 * Send email to [Pitagon Support Team](mailto:support@pitagon.vn) for help.
-* Connect [Travis Tran on Facebook](https://www.facebook.com/travistran1989) for real-time discussion.
 * Reporting any issue on [Github one-press-vps-starter](https://github.com/ThePitagon/one-press-vps-starter/issues) project.
+
+Connect with author:
+* Official site: [travistran.me](https://travistran.me/) | [truongtx.com](https://truongtx.com/).
+* Facebook: [@travistran1989](https://www.facebook.com/travistran1989/).
+* Twitter: [@travistran1989](https://twitter.com/travistran1989/).
+* LinkedIn: [@travistran1989](https://www.linkedin.com/in/travistran1989/).
 
 **Pull requests are always welcome**
