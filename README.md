@@ -1,6 +1,7 @@
-# one-press-vps-starter
-
+# One Press VPS Starter [<img src="https://img.shields.io/twitter/follow/ThePitagon.svg?label=Follow&style=social">](https://twitter.com/ThePitagon/)
 Setup a new vps with 3 security layers
+
+<img src="https://img.shields.io/badge/version-1.0-brightgreen">
 
 # Usage
 
@@ -33,3 +34,12 @@ In there:
 # Test
 
 See `test.log` for example output.
+
+## Support & Feedback
+If you still have a question after using One Press VPS Starter, you have a few options.
+* Reporting any issue on [Github one-press-vps-starter](https://github.com/ThePitagon/one-press-vps-starter/issues) project.
+* Using support page on [Pitagon Website](https://pitagon.io).
+* Send email to [Pitagon Support Team](mailto:support@pitagon.vn) for help.
+* Connect with author on [GitHub](https://github.com/travistran1989/).
+
+**Pull requests are always welcome**
