@@ -6,14 +6,11 @@
 
 echo 'Setting up iptables...'
 
-# Disable firewalld on CentOS 7
-sudo systemctl stop firewalld
-sudo systemctl disable firewalld
 # Install iptables
-sudo yum install -y iptables-services
+sudo dnf install -y iptables-services
 sudo systemctl start iptables
-sudo systemctl status iptables
 sudo systemctl enable iptables
+sudo systemctl status iptables
 
 echo 'Setting up basic policies...'
 

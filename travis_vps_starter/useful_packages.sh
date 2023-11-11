@@ -6,8 +6,7 @@
 
 echo 'Installing useful packages...'
 
-sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-
-sudo yum -y install nc telnet traceroute gcc make pcre pcre-devel openssl libcurl libcurl-devel rpm nano tar zip unzip
+sudo dnf install -y epel-release
+sudo dnf install -y nc telnet traceroute gcc make pcre pcre-devel openssl libcurl libcurl-devel rpm nano tar zip unzip net-tools bind-utils
 
 echo 'Installing useful packages... DONE'

@@ -50,4 +50,8 @@ chmod +x setup_sshd.sh
 chmod +x create_user.sh
 ./create_user.sh $ADMIN_USER $ADMIN_PASSWORD $PUB_KEY
 
+# Setup
+chmod +x setup_ols.sh
+./setup_ols.sh $ADMIN_USER
+
 echo 'Setting up VPS all DONE.'
