@@ -31,4 +31,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/
 
 # Setup OLS
 sudo runuser -l $ADMIN_USER -c 'git clone https://github.com/travistran1989/ols-docker-env.git'
+sudo runuser -l $ADMIN_USER -c 'cd ols-docker-env'
+sudo runuser -l $ADMIN_USER -c 'docker compose up -d'
 
+echo 'Setting OpenLightSpeed... DONE'
