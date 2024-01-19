@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @author: Travis Tran
-# @website: https://travistran.me
+# @website: https://truong.id
 # @notice: run as root
 
 ADMIN_USER=$1
