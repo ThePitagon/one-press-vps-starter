@@ -6,12 +6,11 @@
 
 echo 'Installing useful packages...'
 
-sudo yum install -y epel-release
-sudo yum install -y nc telnet traceroute gcc make pcre pcre-devel openssl libcurl libcurl-devel rpm nano tar zip unzip net-tools bind-utils git
-
-sudo yum install -y cronie
-sudo systemctl start crond
-sudo systemctl enable crond
-sudo systemctl status crond
+sudo apt install -y software-properties-common
+sudo apt install -y \
+  telnet traceroute build-essential libpcre3-dev libssl-dev \
+  libcurl4-openssl-dev rpm nano tar zip unzip net-tools dnsutils git
+sudo apt install -y cron
+sudo systemctl enable --now cron
 
 echo 'Installing useful packages... DONE'

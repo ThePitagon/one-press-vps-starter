@@ -5,7 +5,6 @@
 # @notice: run as root
 
 echo 'Updating OS...'
-
-sudo yum update -y
-
+sudo apt update
+sudo apt upgrade -y
 echo 'Updating OS... DONE'

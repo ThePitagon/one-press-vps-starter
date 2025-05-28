@@ -10,14 +10,14 @@ SSH_PORT=$1
 
 echo 'Setting up SSH service...'
 
+sudo apt install -y openssh-server
+
 if [ "$SSH_PORT" != "22" ]; then
 	echo 'Changing SSH port...'
-	# If SSH port difference than 22, configure new SSH port
-	# Here you need to change "#Port 22" for fit with your current SSH configuration
-	sudo sed -i -e 's/'"#Port 22"'/'"Port $SSH_PORT"'/g' /etc/ssh/sshd_config
-	sudo yum install -y policycoreutils-python-utils selinux-policy-targeted
-	sudo semanage port -a -t ssh_port_t -p tcp $SSH_PORT
-	sudo systemctl restart sshd
+  echo "Changing SSH port to $SSH_PORT..."
+  sudo sed -i "s/^#Port 22/Port $SSH_PORT/" /etc/ssh/sshd_config
+  sudo sed -i "s/^Port .*/Port $SSH_PORT/"    /etc/ssh/sshd_config
+  sudo systemctl restart ssh
 fi
 
 echo 'Adding SSH port to iptables...'
