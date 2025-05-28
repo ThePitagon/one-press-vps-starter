@@ -23,10 +23,11 @@ fi
 echo 'Adding SSH port to iptables...'
 
 # Add SSH port to firewall
-sudo iptables -I INPUT -p tcp -m tcp --dport $SSH_PORT -j ACCEPT
-sudo iptables -I INPUT -p tcp --dport $SSH_PORT -m state --state NEW -m recent --set --name ssh --rsource
-sudo iptables -I INPUT -p tcp --dport $SSH_PORT -m state --state NEW -m recent ! --rcheck --seconds 60 --hitcount 4 --name ssh --rsource -j ACCEPT
-sudo iptables-save | sudo tee /etc/sysconfig/iptables
-sudo systemctl restart iptables
+iptables -I INPUT -p tcp -m tcp --dport $SSH_PORT -j ACCEPT
+iptables -I INPUT -p tcp --dport $SSH_PORT -m state --state NEW -m recent --set --name ssh --rsource
+iptables -I INPUT -p tcp --dport $SSH_PORT -m state --state NEW -m recent ! --rcheck --seconds 60 --hitcount 4 --name ssh --rsource -j ACCEPT
+
+netfilter-persistent save
+netfilter-persistent reload
 
 echo 'Setting up SSH service... DONE'
