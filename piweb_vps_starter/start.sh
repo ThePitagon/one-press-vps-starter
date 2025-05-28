@@ -52,6 +52,6 @@ chmod +x create_user.sh
 
 # Setup
 chmod +x setup_ols.sh
-./setup_ols.sh $ADMIN_USER
+# ./setup_ols.sh $ADMIN_USER
 
 echo 'Setting up VPS all DONE.'

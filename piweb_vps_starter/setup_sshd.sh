@@ -15,7 +15,7 @@ if [ "$SSH_PORT" != "22" ]; then
 	# If SSH port difference than 22, configure new SSH port
 	# Here you need to change "#Port 22" for fit with your current SSH configuration
 	sudo sed -i -e 's/'"#Port 22"'/'"Port $SSH_PORT"'/g' /etc/ssh/sshd_config
-	sudo dnf install -y policycoreutils-python-utils selinux-policy-targeted
+	sudo yum install -y policycoreutils-python-utils selinux-policy-targeted
 	sudo semanage port -a -t ssh_port_t -p tcp $SSH_PORT
 	sudo systemctl restart sshd
 fi

@@ -22,7 +22,7 @@ sudo hwclock --systohc --localtime
 sudo hwclock
 
 # Synchronize local time with global time from internet
-sudo dnf -y install chrony
+sudo yum -y install chrony
 sudo sed -i -e 's/'"pool 2.centos.pool.ntp.org iburst"'/'"pool time.nist.gov iburst"'/g' /etc/chrony.conf
 sudo systemctl enable --now chronyd
 sudo systemctl restart chronyd

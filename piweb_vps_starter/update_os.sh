@@ -6,6 +6,6 @@
 
 echo 'Updating OS...'
 
-sudo dnf update -y
+sudo yum update -y
 
 echo 'Updating OS... DONE'

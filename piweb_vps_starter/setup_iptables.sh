@@ -7,7 +7,7 @@
 echo 'Setting up iptables...'
 
 # Install iptables
-sudo dnf install -y iptables-services
+sudo yum install -y iptables-services
 sudo systemctl start iptables
 sudo systemctl enable iptables
 sudo systemctl status iptables
